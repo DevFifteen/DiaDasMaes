@@ -70,3 +70,10 @@ section div.txt{
         margin-bottom: 20px;
     }
 }
+
+@media screen and (max-width: 690px){
+    section div.txt{
+        font-size: 30px;
+        width: 100%;
+    }
+}
