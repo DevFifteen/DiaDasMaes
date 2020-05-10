@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: white;
+}
+
+header h1{
+    font-family: "Dancing Script";
+    font-size: 70px;
+    text-align: center;
+    animation-name: piscapisca;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+section{
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 2%;
+}
+
+section div.txt{
+    width: 75%;
+    margin: 0 auto;
+    border: 2px solid black;
+    margin-top: 4%;
+    padding: 14px;
+    font-family: 'Dosis';
+    font-size: 35px;
+    text-align: left;
+}
+
+@keyframes piscapisca{
+    from{
+        color: black;
+    }
+
+    50%{
+        color: pink;
+    }
+
+    to{
+        color: black;
+    }
+}
+
+@media screen and (max-width: 1236px){
+    section div.txt{
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    section div.txt{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 1108px){
+    section div.txt{
+        margin-bottom: 20px;
+    }
+}
